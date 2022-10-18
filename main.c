@@ -19,7 +19,7 @@ int main( void)
 	{
 		char *const string = fgets( buffer, BUFFER_SIZE, stdin);
 
-		if ( string == NULL )
+		if ( string == NULL || string[0] == 10 )
 		{
 			return 1;
 		}
